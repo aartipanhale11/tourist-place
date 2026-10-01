@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore Paradise | Tourist Destination</title>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-content">
+      <h1>Konkan Tourism</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="about-section fade-in">
+    <div class="about-text">
+      <h2>About Konkan</h2>
+      <p>
+        Welcome to <strong>Tourist Place Konkan</strong> — your gateway to the breathtaking beauty of India's western coast. 
+        Konkan is a region of stunning contrasts — from golden beaches and blue seas to lush green forests and charming villages.
+      </p>
+      <p>
+        Explore the tranquil beaches of Tarkarli, Kashid, and Ganpatipule, or dive into history at the majestic Sindhudurg and Kolaba Forts.
+        The region is also home to ancient temples, waterfalls, and the mouthwatering Malvani cuisine that captures the true essence of coastal life.
+      </p>
+      <p>
+        Whether you seek adventure, peace, or culture — Konkan welcomes you with open arms and endless beauty.
+      </p>
+    </div>
+
+    <div class="about-video">
+      <video autoplay loop muted playsinline>
+        <source src="image/Playful  Sunset Cloudy Beach Desktop Wallpaper.mp4" type="video/mp4">
+      </video>
+    </div>
+  </section>
+
+  <!-- Offers Section -->
+  <section class="offers-section fade-in">
+    <h3>Top Tourist Places in Konkan</h3>
+    <div class="offers-container">
+
+      <div class="offer-card">
+        <img src="image/tarkali beach.png" alt="Tarkarli Beach">
+         <h4>🏖 Tarkarli Beach</h4>
+        <p>Enjoy water sports, scuba diving, and stunning sunsets by the Arabian Sea.</p>
+      </div>
+
+      <div class="offer-card">
+        <img src="image/Sindhudurg Fort.jpg" alt="Sindhudurg Fort">
+        <h4>🏰 Sindhudurg Fort</h4>
+        <p>A historic sea fort built by Chhatrapati Shivaji Maharaj, rich with stories of valor.</p>
+      </div>
+
+      <div class="offer-card">
+        <img src="image/temple-of-ganpatipule.jpg" alt="Ganpatipule Temple">
+        <h4>🌅 Ganpatipule Temple</h4>
+        <p>A serene seaside temple dedicated to Lord Ganesha — a blend of faith and beauty.</p>
+      </div>
+
+      <div class="offer-card">
+        <img src="image/dapoli.webp" alt="Dapoli & Ratnagiri">
+        <h4>🌿 Dapoli & Ratnagiri</h4>
+        <p>Explore coastal towns known for beaches, Alphonso mangoes, and natural charm.</p>
+      </div>
+    </div>
+  </section>
+
+
+<!--offers-->
+  <section class="offers">
+  <h2>Our Travel Offers</h2>
+  <p class="subtitle">Enjoy amazing travel deals to explore the beauty of Konkan with comfort and savings!</p>
+
+  <div class="offer-container">
+    <div class="offer-box">
+      <img src="image/bus.jpg" alt="Bus Offer">
+      <h3>Bus Travel Offers</h3>
+      <p>Book your Konkan trip with our partner bus services and get up to <strong>30% off</strong> on tickets.</p>
+      <a href="Packages.html" class="btn">Book Now</a>
+    </div>
+
+    <div class="offer-box">
+      <img src="image/train.jpg" alt="Train Offer">
+      <h3>Train Travel Offers</h3>
+      <p>Experience the scenic Konkan Railway route! Special discounts on group bookings and early reservations.</p>
+      <a href="Packages.html" class="btn">Check Trains</a>
+    </div>
+
+    <div class="offer-box">
+      <img src="image/plains.jpeg" alt="Flight Offer">
+      <h3>Flight Offers</h3>
+      <p>Fly to Ratnagiri or Goa and get exclusive airfare discounts for Konkan holiday packages.</p>
+      <a href="Packages.html" class="btn">View Flights</a>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <h3>Konkan Tourism</h3>
+      <p>Plan your next tropical journey with us — sun, sea, and smiles await you!</p>
+      <p class="credit">© 2025 Konkan Tourism| Designed with ❤️</p>
+    </div>
+  </footer>
+
+  <style>
+    body {
+      background-color: #f4f8f7;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      margin-top:100px;
+
+    }
+
+    /* Header */
+   /* ===== Header (Centered) ===== */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  z-index: 1000;
+}
+
+.header-content {
+  text-align: center;
+}
+
+header h1 {
+  color: #00bcd4;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00bcd4;
+}
+
+    /* About Section */
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      margin: 10px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.5s ease;
+      
+    }
+
+    .about-section:hover {
+      transform: scale(1.01);
+    }
+
+    .about-text {
+      flex: 1 1 400px;
+      padding: 20px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color: black;
+      font-size: 2em;
+    }
+
+    .about-text h2 {
+      color: #00796b;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .about-text p {
+      line-height: 1.6;
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .about-video {
+      flex: 1 1 400px;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .about-video video {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Offers Section */
+    .offers-section {
+      text-align: center;
+      padding: 30px 10px;
+      background-color: #e0f2f1;
+      border-radius: 12px;
+      margin: 20px;
+    }
+
+    .offers-section h3 {
+      color: #004d40;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .offers-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .offer-card {
+      background: linear-gradient(to bottom right, #9899cc, #2de9e9);
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 250px;
+      padding: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .offer-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .offer-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .offer-card h4 {
+      color: #202020;
+      margin-bottom: 8px;
+    }
+
+    .offer-card p {
+      font-size: 14px;
+      color: #1b1b1b;
+    }
+
+    /* Fade-in animation */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 1s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Footer */
+   
+    footer {
+  background: linear-gradient(135deg, #00151a, #002c33);
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h3 {
+  color: #00bcd4;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.footer-content p {
+  color: #ddd;
+  max-width: 500px;
+  margin: 5px auto;
+  line-height: 1.6;
+}
+
+.credit {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+    
+    /*offers*/
+    .offers {
+  background: linear-gradient(180deg, #e6f7ff, #ffffff);
+  text-align: center;
+  padding: 60px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.offers h2 {
+  font-size: 2em;
+  color: #005b7f;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.offer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.offer-box {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.offer-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.offer-box img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.offer-box h3 {
+  color: #0077a3;
+  margin: 15px 0 8px;
+  font-size: 1.2em;
+}
+
+.offer-box p {
+  font-size: 0.95em;
+  color: #555;
+  padding: 0 15px 15px;
+}
+
+.btn {
+  display: inline-block;
+  background: #0077a3;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+  margin-bottom: 20px;
+}
+
+.btn:hover {
+  background: #005f82;
+}
+
+  </style>
+
+  <script>
+    // Fade-in effect when scrolling
+    const faders = document.querySelectorAll('.fade-in');
+    window.addEventListener('scroll', () => {
+      faders.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          el.classList.add('visible');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

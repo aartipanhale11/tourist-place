@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Konkan Transport Packages</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --accent: #0ea5a4;
+      --muted: #141414;
+      --card-bg: #ffffff;
+      --page-bg: linear-gradient(180deg,#74abb4 0%, #ffffff 100%);
+    }
+    *{box-sizing:border-box}
+    body{
+      font-family:Poppins,system-ui;
+      margin:0;
+      background:var(--page-bg);
+      margin-top:150px;
+    }
+
+    /* Header */
+header {
+  position: fixed;
+  top: 0; width: 100%;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(8px);
+  display: flex; justify-content: center; align-items: center;
+  padding: 15px 0;
+  z-index: 1000;
+}
+.header-content { text-align: center; }
+header h1 { color: #00bcd4; font-size: 2rem; }
+nav { margin-top: 10px; }
+nav a {
+  color: #fff; text-decoration: none;
+  margin: 0 15px; font-weight: 500;
+}
+nav a:hover { color: #00bcd4; }
+
+    .hero{max-width:1100px;margin:6px auto;padding:18px}
+    .packages{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:18px}
+    .card{background:white;border-radius:14px;overflow:hidden;box-shadow:0 6px 18px rgba(12,24,40,0.06)}
+    .card img{width:100%;height:160px;object-fit:cover}
+    .card-content{padding:16px}
+    .title{font-weight:600;margin-bottom:8px}
+    .price{font-size:20px;font-weight:700;color:var(--accent)}
+    .btn{
+      padding:10px 14px;border-radius:10px;background:var(--accent);
+      color:white;text-decoration:none;font-weight:600;cursor:pointer;border:none
+    }
+
+    /* Booking Form */
+    #bookingForm{
+      max-width:400px;margin:20px auto;background:white;
+      padding:20px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.1)
+    }
+    .field{display:flex;flex-direction:column;margin-bottom:10px}
+    .field input, .field select{
+      padding:10px;border-radius:8px;border:1px solid #ddd
+    }
+
+    /* Receipt */
+#receipt {
+  width: 320px;
+  margin: 30px auto;
+  background: white;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  text-align:center;
+ 
+}
+.hidden { display: none; }
+.thanks { margin-top: 12px; font-size: 14px; color: #444; }
+
+    footer{
+      margin-top:40px;padding:18px;text-align:center;
+      background:#00252a;color:white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-content">
+      <h1>Konkan Tourism</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- PACKAGES -->
+  <main class="hero">
+
+    <p style="color:#6b7280;margin-bottom:20px">
+      Choose Special Bus / Train / Flight Packages
+    </p>
+
+    <div class="packages">
+
+      <!-- Bus -->
+      <article class="card">
+        <img src="image/bus.jpg">
+        <div class="card-content">
+          <div class="title">Konkan Bus Tour</div>
+          <div class="price">₹5,999</div>
+          <button class="btn" data-package="Konkan Bus Tour" data-price="5999">Book Now</button>
+        </div>
+      </article>
+
+      <!-- Train -->
+      <article class="card">
+        <img src="image/train.jpg">
+        <div class="card-content">
+          <div class="title">Konkan Express Train Journey</div>
+          <div class="price">₹8,499</div>
+          <button class="btn" data-package="Konkan Express Train Journey" data-price="8499">Book Now</button>
+        </div>
+      </article>
+
+      <!-- Flight -->
+      <article class="card">
+        <img src="image/plains.jpeg">
+        <div class="card-content">
+          <div class="title">Konkan Air Getaway</div>
+          <div class="price">₹15,999</div>
+          <button class="btn" data-package="Konkan Air Getaway" data-price="15999">Book Now</button>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+
+  <!-- BOOKING FORM -->
+  <form id="bookingForm">
+    <h2 style="text-align:center;margin-bottom:10px;color:#0ea5a4">Booking Form</h2>
+
+    <div class="field">
+      <label>Package</label>
+      <input id="pkgName" type="text" readonly />
+    </div>
+
+    <div class="field">
+      <label>Name</label>
+      <input id="travelerName" type="text" required />
+    </div>
+
+    <div class="field">
+      <label>Phone</label>
+      <input id="phone" type="tel" required />
+    </div>
+
+    <div class="field">
+      <label>Travellers</label>
+      <select id="pax">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+         <option value="7">7</option>
+          <option value="8">8</option>
+           <option value="9">9</option>
+            <option value="10">10</option>
+      </select>
+    </div>
+
+    <button type="submit" class="btn" style="width:100%">Confirm Booking</button>
+  </form>
+
+
+  <!-- RECEIPT -->
+<button id="showReceiptBtn" class="btn" style="margin-top:20px" >Show Receipt</button>
+
+<div id="receipt" class="hidden">
+  <h2>Konkan Tourism</h2>
+
+  <p><strong>Receipt ID:</strong> <span id="receiptId"></span></p>
+  <p><strong>Name:</strong> <span id="userName"></span></p>
+  <p><strong>Phone:</strong> <span id="userPhone"></span></p>
+  <p><strong>Package:</strong> <span id="userPackage"></span></p>
+  <p><strong>Travellers:</strong> <span id="userPax"></span></p>
+  <p><strong>Total Amount:</strong> <span id="userTotal"></span></p>
+
+  <p class="thanks">⭐ Thank you for choosing Konkan Tourism ⭐</p>
+</div>
+
+<button id="cancelReceiptBtn" class="btn" style="background:#d9534f;margin-top:10px">
+  Cancel Receipt
+</button>
+
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 Konkan Tourism | Designed with ❤️
+  </footer>
+
+
+<script>
+/* BOOKING BUTTON → FILL FORM */
+document.querySelectorAll("button[data-package]").forEach(btn=>{
+  btn.onclick = ()=> {
+    document.getElementById("pkgName").value = btn.dataset.package;
+    currentPrice = btn.dataset.price;
+  }
+});
+
+let currentPrice = 0;
+
+/* FORM SUBMIT → STORE VALUES */
+let bookedData = {};
+
+document.getElementById("bookingForm").onsubmit = function(e){
+  e.preventDefault();
+
+  bookedData.name = document.getElementById("travelerName").value;
+  bookedData.phone = document.getElementById("phone").value;
+  bookedData.package = document.getElementById("pkgName").value;
+  bookedData.pax = document.getElementById("pax").value;
+  bookedData.total = "₹" + (currentPrice * bookedData.pax);
+
+  alert("Booking Confirmed!");
+};
+
+
+/* SHOW RECEIPT BUTTON */
+document.getElementById("showReceiptBtn").onclick = function(){
+
+  // Generate ID
+  document.getElementById("receiptId").innerText = "KT-" + Math.floor(Math.random()*900000+100000);
+
+  // Fill receipt data
+  document.getElementById("userName").innerText = bookedData.name || "";
+  document.getElementById("userPhone").innerText = bookedData.phone || "";
+  document.getElementById("userPackage").innerText = bookedData.package || "";
+  document.getElementById("userPax").innerText = bookedData.pax || "";
+  document.getElementById("userTotal").innerText = bookedData.total || "";
+
+  document.getElementById("receipt").classList.remove("hidden");
+};
+
+
+
+// CANCEL RECEIPT BUTTON
+document.getElementById("cancelReceiptBtn").onclick = function () {
+    document.getElementById("receipt").classList.add("hidden");
+
+    // clear stored data
+    bookedData = {};
+
+    // clear receipt fields
+    document.getElementById("receiptId").innerText = "";
+    document.getElementById("userName").innerText = "";
+    document.getElementById("userPhone").innerText = "";
+    document.getElementById("userPackage").innerText = "";
+    document.getElementById("userPax").innerText = "";
+    document.getElementById("userTotal").innerText = "";
+
+    alert("Receipt cancelled.");
+};
+</script>
+
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore Paradise | Tourist Destination</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!-- Header -->
+  <header>
+    <div class="header-content">
+      <h1>Konkan Tourism</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contact Title -->
+  <div class="contact-header">
+    <h1>Contact Us - Konkan Tourism</h1>
+    <p>We’d love to hear from you! Reach out for bookings, queries, or travel assistance.</p>
+  </div>
+
+  <!-- Contact Section -->
+  <section class="contact-container">
+    <div class="contact-info">
+      <h2>Get In Touch</h2>
+      <p><strong>Address:</strong> Near Tarkarli Beach, Sindhudurg, Maharashtra</p>
+      <p><strong>Phone:</strong> <a href="tel:+919876543210">+91 98765 43210</a></p>
+      <p><strong>Email:</strong> <a href="mailto:info@konkantourism.in">info@konkantourism.in</a></p>
+      <p><strong>Office Hours:</strong> Mon - Sat, 9:00 AM - 6:00 PM</p>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60652.662070701!2d73.4636!3d16.0374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc00b27a5dfbff7%3A0x73d1e9f1f8a53277!2sTarkarli%20Beach!5e0!3m2!1sen!2sin!4v1709999999999" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form id="contactForm">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Your message..." required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <h3>Konkan Tourism</h3>
+      <p>Experience the beauty of Konkan — beaches, forts, food, and memories for a lifetime.</p>
+      <p class="credit">© 2025 Konkan Tourism | Designed with ❤️ by Aarti</p>
+    </div>
+  </footer>
+
+  <style>
+      body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(180deg, #e0f7fa, #ffffff);
+      color: #004d40;
+    }
+
+    /* Navigation Header */
+    header {
+      background: #00796b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .header-content h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #b2dfdb;
+    }
+
+    /* Contact Section */
+    .contact-header {
+      text-align: center;
+      margin-top: 40px;
+      color: #00796b;
+    }
+
+    .contact-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 40px 20px;
+    }
+
+    .contact-info, .contact-form {
+      background: rgb(255, 253, 253);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 420px;
+    }
+
+    .contact-info h2, .contact-form h2 {
+      color: #00796b;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .contact-info p {
+      margin: 10px 0;
+      color: #004d40;
+      line-height: 1.5;
+    }
+
+    .contact-info a {
+      color: #00796b;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 8px;
+      border: 1px solid #b2dfdb;
+      font-size: 1em;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #00796b;
+      box-shadow: 0 0 5px rgba(0, 121, 107, 0.5);
+    }
+
+    textarea {
+      resize: none;
+      height: 100px;
+    }
+
+    button {
+      background: #00796b;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 1em;
+      margin-top: 15px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #004d40;
+    }
+
+    iframe {
+      width: 100%;
+      height: 250px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+
+    /* Footer */
+    footer {
+      background: linear-gradient(135deg, #00151a, #002c33);
+      padding: 40px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    .footer-content h3 {
+      color: #00bcd4;
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+
+    .footer-content p {
+      color: #ddd;
+      max-width: 500px;
+      margin: 5px auto;
+      line-height: 1.6;
+    }
+
+    .credit {
+      color: #aaa;
+      font-size: 0.9rem;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 850px) {
+      .contact-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  
+  </style>
+  <script>
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      alert('Thank you, ' + name + '! Your message has been sent successfully.');
+      form.reset();
+    });
+  </script>
+</body>
+</html>

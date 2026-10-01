@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore Paradise | Tourist Destination</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+  <header>
+    <div class="header-content">
+      <h1>Konkan Tourism</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <video autoplay muted loop id="bg-video">
+      <source src="image/Brown & White Minimalist Vacation In Bali YouTube Thumbnail (1).mp4" type="video/mp4">
+    </video>
+    <div class="hero-content">
+      <h2>Welcome to Konkan</h2>
+      
+      <a href="#about" class="btn">Discover More</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="fade-in about-section">
+    <div class="about-content">
+      <div class="about-text">
+        <h2>About Us</h2>
+        <p>
+        Welcome to Konkan, the enchanting coastal paradise of Maharashtra! Blessed with golden beaches, lush green hills, ancient temples, and rich cultural heritage, Konkan offers a perfect blend of natural beauty and tradition. From the scenic beaches of Ganpatipule and Tarkarli to the historic forts and mouth-watering seafood, Konkan promises a truly unforgettable experience.
+         Discover the serene charm and warm hospitality that make Konkan a hidden gem of India.
+        </p>
+      </div>
+      <div class="about-img">
+        <img src="image/konkan1sea.jpg" alt="Beach" />
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <div class="food-card">
+      <img src="image/malvani2.png" alt="Malvani Fish Thali">
+      <div class="info">
+        <h2>Malvani Fish Thali</h2>
+        <p>Spicy fish curry, solkadhi, rice, and crispy papad – the essence of Konkan cuisine.</p>
+      </div>
+    </div>
+
+    <div class="food-card">
+      <img src="image/solkadhi.png" alt="Solkadhi">
+      <div class="info">
+        <h2>Solkadhi</h2>
+        <p>A soothing blend of kokum and coconut milk, refreshing after a spicy meal.</p>
+      </div>
+    </div>
+
+    <div class="food-card">
+      <img src="image/modak.png" alt="Ukadiche Modak">
+      <div class="info">
+        <h2>Ukadiche Modak</h2>
+        <p>Steamed rice dumplings stuffed with coconut and jaggery — a divine sweet treat.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <h3>Konkan Tourism</h3>
+      <p>Plan your next tropical journey with us — sun, sea, and smiles await you!</p>
+      <p class="credit">© 2025 Konkan Tourism | Designed with ❤️</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+
+  <style>
+
+
+/* Gallery Section */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 20px;
+  background: linear-gradient(180deg, #83b5c2, #0c0c0c);
+}
+
+.food-card {
+  position: relative;
+  width: 320px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  background:linear-gradient(rgb(126, 192, 218),rgb(238, 233, 233));
+}
+
+.food-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.food-card:hover img {
+  transform: scale(1.1);
+}
+
+.food-card .info {
+  padding: 20px;
+  transition: background 0.3s ease;
+}
+
+.food-card h2 {
+  color: #111111;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.food-card p {
+  font-size: -1cm;
+  color: #222121;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.food-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.25);
+}
+
+
+/* Animations */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 { font-size: 2.2em; }
+  .gallery { flex-direction: column; align-items: center; }
+}
+
+ 
+  </style>
+</body>
+</html>
